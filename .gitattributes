@@ -1,0 +1,11 @@
+* text=auto !eol
+/App.ico -text
+/AssemblyInfo.cs -text
+/AssemblyInfoUtil.csproj -text
+/AssemblyInfoUtil.sln -text
+/Main.cs -text
+/Readme.txt -text
+/app.config -text
+test/AssemblyInfo.cs -text
+test/AssemblyInfo.vb -text
+test/InstallShieldFileMaintenance.isl -text

@@ -1,0 +1,10 @@
+REM xcopy $(TargetDir)GMS.Utils.AssemblyInfoUtil.exe $(TargetDir)sln\
+
+del $(TargetDir)*.pdb
+del $(TargetDir)*.nupkg
+
+"$(SolutionDir).NuGetPack\NuGetPack.exe" "$(ProjectPath)" "$(TargetPath)" $(ConfigurationName)
+
+$(SolutionDir).NuGetPack\NuGet push -SkipDuplicate $(TargetDir)*.nupkg TmJgEsOE1DKWWzMA2u3R -Source http://192.168.1.6:90/NuGetServer/nuget 
+
+

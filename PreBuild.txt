@@ -1,0 +1,7 @@
+if $(ConfigurationName) == Debug (
+	$(SolutionDir)AssemblyInfoUtil\$(OutDir)GMS.Utils.AssemblyInfoUtil.exe "$(SolutionDir)AssemblyInfoUtil\Properties\AssemblyInfo.cs" -inc:4
+REM $(SolutionDir)AssemblyInfoUtil\$(OutDir)GMS.Utils.AssemblyInfoUtil.exe "$(ProjectDir)Properties\VersionInfo.cs" -inc:4
+) else (
+	$(SolutionDir)AssemblyInfoUtil\$(OutDir)GMS.Utils.AssemblyInfoUtil.exe "$(SolutionDir)AssemblyInfoUtil\Properties\AssemblyInfo.cs" -inc:3 -rst:4
+REM "$(SolutionDir)AssemblyInfoUtil\$(OutDir)AssemblyInfoUtil.exe" "$(ProjectDir)Properties\VersionInfo.cs" -inc:3 -rst:4
+)
